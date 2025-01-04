@@ -1,0 +1,45 @@
+researcher2@8c2fdbb69250:~/projects$ cd /home/researcher2/projects
+researcher2@8c2fdbb69250:~/projects$ ls -la
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jan  1 18:15 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jan  1 18:59 ..
+-rw--w---- 1 researcher2 research_team   46 Jan  1 18:15 .project_x.txt
+drwx--x--- 2 researcher2 research_team 4096 Jan  1 18:15 drafts
+-rw-rw-rw- 1 researcher2 research_team   46 Jan  1 18:15 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Jan  1 18:15 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_t.txt
+researcher2@8c2fdbb69250:~/projects$ chmod o-w project_k.txt
+researcher2@8c2fdbb69250:~/projects$ ls -la
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jan  1 18:15 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jan  1 18:59 ..
+-rw--w---- 1 researcher2 research_team   46 Jan  1 18:15 .project_x.txt
+drwx--x--- 2 researcher2 research_team 4096 Jan  1 18:15 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Jan  1 18:15 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_t.txt
+researcher2@8c2fdbb69250:~/projects$ chmod g-w .project_x.txt
+researcher2@8c2fdbb69250:~/projects$ ls -la
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jan  1 18:15 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jan  1 18:59 ..
+-rw------- 1 researcher2 research_team   46 Jan  1 18:15 .project_x.txt
+drwx--x--- 2 researcher2 research_team 4096 Jan  1 18:15 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Jan  1 18:15 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_t.txt
+researcher2@8c2fdbb69250:~/projects$ chmod g-x drafts
+researcher2@8c2fdbb69250:~/projects$ ls -la
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Jan  1 18:15 .
+drwxr-xr-x 3 researcher2 research_team 4096 Jan  1 18:59 ..
+-rw------- 1 researcher2 research_team   46 Jan  1 18:15 .project_x.txt
+drwx------ 2 researcher2 research_team 4096 Jan  1 18:15 drafts
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Jan  1 18:15 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Jan  1 18:15 project_t.txt
+researcher2@8c2fdbb69250:~/projects$ 
